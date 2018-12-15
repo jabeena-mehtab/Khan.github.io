@@ -1,0 +1,13 @@
+  #alert
+  {
+  background-color:#ffff00 
+  color:#000099;
+  text-align:center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  }
+  #position
+  {
+  	width:300px;
+  }

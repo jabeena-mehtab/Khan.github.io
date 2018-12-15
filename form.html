@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> form </title>
+<script>
+function abc()
+
+cpass=document.forms["table"]["cpass"].value
+if (pass!==cpass)
+{
+alert("plz retype your confirm password ");
+return false
+}
+</script>
+</head>
+<body>
+<form name="table" action="test your self.html" method="post"  enctype="multipart/form-data">
+<table width="400px" border="1" bordercolor="#003300" bgcolor="#CCCCCC"align="center">
+<tr>
+<td>First Name</td>
+<td><input size="34" required="required" type="text" placeholder="Type your Name" name="fname"></td>
+</tr>
+
+<tr>
+<td>last name</td>
+<td><input type="text" required="required" placeholder="Type your last name" name="lname" size="34"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="email" required="required" placeholder="Type your Email" name="emaill" size="34"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" required="required" placeholder="Type you,r Password" name="pass"  size="34"></td>
+</tr>
+<tr>
+<td width="150">Confirm password</td>
+<td><input size="34" required="required" type="password" placeholder="confirm Password" name="cpass"></td>
+</tr>
+<tr>
+<td>Your gender</td>
+<td><input type="radio" value="Male" name="gender" checked="checked">Male
+<input type="radio" value="Female" name="gender">Female</td>
+</tr>
+<tr>
+<td>Your Hobbies</td>
+<td><input type="checkbox" value="Cricket" name="hobby1" checked="checked">football
+<input type="checkbox" value="Football" name="hobby2">cricket
+<input type="checkbox" value="Soccer" name="hobby3">Soccer
+</td>
+</tr>
+<tr>
+<td>Select country</td>
+<td>
+<select name="c">
+<option value="pak">Pakistan</option>
+<option value="uae">U.A.E</option>
+<option value="Ind">India</option>
+<option value="us">U.S</option>
+<option value="eng">England</option>
+<option value="uk">U.k</option>
+<option value="aus">Austrailia</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Upload File</td>
+<td>
+<input type="file" name="upload">
+</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>
+<textarea rows="3" cols="32" name="comments"></textarea>
+</td>
+</tr>
+
+<tr>
+<td> click to submit</td>
+<td><input type="submit" onclick="return(abc())" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="reset" ></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
